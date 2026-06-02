@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://wq8kf0iy5kbf"]
+
+[ext_resource type="PackedScene" uid="uid://cor2pynnwkxs6" path="res://assets/3d_kits/kenney_fancy_town/lantern.glb" id="1_l4fb5"]
+
+[node name="LightingLantern" type="Node3D" unique_id=1310366735]
+
+[node name="Mesh" parent="." unique_id=1712159255 instance=ExtResource("1_l4fb5")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1599285343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0)
+omni_range = 10.0

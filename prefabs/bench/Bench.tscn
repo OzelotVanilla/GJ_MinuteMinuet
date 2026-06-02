@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ceigfq8a5c2wk"]
+
+[ext_resource type="PackedScene" uid="uid://cai1r01g4r6a5" path="res://assets/3d_kits/kenney_fancy_town/stall-bench.glb" id="1_602ll"]
+[ext_resource type="PackedScene" uid="uid://brogjyp47fht3" path="res://assets/3d_kits/kenney_fancy_town/fence.glb" id="2_0y27e"]
+
+[node name="Bench" type="Node3D" unique_id=1773540662]
+
+[node name="stall-bench2" parent="." unique_id=806701301 instance=ExtResource("1_602ll")]
+
+[node name="fence2" parent="." unique_id=187088678 instance=ExtResource("2_0y27e")]
+transform = Transform3D(0.5413457, -0.1042808, 0, 0.0699054, 0.80754817, 0, 0, 0, 0.9092308, -0.3443518, 0.14329776, 0)

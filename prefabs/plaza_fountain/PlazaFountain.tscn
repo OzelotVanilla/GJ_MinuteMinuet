@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://im0sbh3nwv5y"]
+
+[ext_resource type="PackedScene" uid="uid://1y3w4doknfb3" path="res://assets/3d_kits/kenney_fancy_town/fountain-round.glb" id="1_yrqjs"]
+[ext_resource type="PackedScene" uid="uid://cajq6gp55fplg" path="res://assets/3d_kits/kenney_fancy_town/fountain-round-detail.glb" id="2_ryjmt"]
+[ext_resource type="PackedScene" uid="uid://dqyho5hotrcl" path="res://assets/3d_kits/kenney_fancy_town/stairs-full-corner-outer.glb" id="3_jul53"]
+[ext_resource type="PackedScene" uid="uid://sofyrn433esq" path="res://assets/3d_kits/kenney_fancy_town/stairs-full.glb" id="4_uh7qs"]
+
+[node name="PlazaFountain" type="Node3D" unique_id=604092553]
+
+[node name="Base" parent="." unique_id=1484990875 instance=ExtResource("1_yrqjs")]
+transform = Transform3D(1.6, 0, 0, 0, 2, 0, 0, 0, 1.6, 0, 0, 0)
+
+[node name="Middle" parent="." unique_id=1023407439 instance=ExtResource("1_yrqjs")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.8, 0)
+
+[node name="Top" parent="." unique_id=147519072 instance=ExtResource("2_ryjmt")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 1.3, 0)
+
+[node name="Stairs" type="Node3D" parent="." unique_id=265736255]
+
+[node name="stair_corner_1" parent="Stairs" unique_id=2012079889 instance=ExtResource("3_jul53")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, -1.5)
+
+[node name="stairs_side_1" parent="Stairs" unique_id=1581160953 instance=ExtResource("4_uh7qs")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.5, 0, -1.5)
+
+[node name="stairs_side_2" parent="Stairs" unique_id=1148415076 instance=ExtResource("4_uh7qs")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.5, 0, -1.5)
+
+[node name="stair_corner_2" parent="Stairs" unique_id=899958730 instance=ExtResource("3_jul53")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.5, 0, -1.5)
+
+[node name="stairs_side_3" parent="Stairs" unique_id=629809494 instance=ExtResource("4_uh7qs")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.5, 0, -0.5)
+
+[node name="stairs_side_4" parent="Stairs" unique_id=1468602317 instance=ExtResource("4_uh7qs")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.5, 0, 0.5)
+
+[node name="stair_corner_3" parent="Stairs" unique_id=1036945540 instance=ExtResource("3_jul53")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.5, 0, 1.5)
+
+[node name="stairs_side_5" parent="Stairs" unique_id=1579861053 instance=ExtResource("4_uh7qs")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 0.5, 0, 1.5)
+
+[node name="stairs_side_6" parent="Stairs" unique_id=1164772830 instance=ExtResource("4_uh7qs")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -0.5, 0, 1.5)
+
+[node name="stairs_side_7" parent="Stairs" unique_id=69215241 instance=ExtResource("4_uh7qs")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -1.5, 0, 0.5)
+
+[node name="stairs_side_8" parent="Stairs" unique_id=93373229 instance=ExtResource("4_uh7qs")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -1.5, 0, -0.5)
+
+[node name="stair_corner_4" parent="Stairs" unique_id=1279174546 instance=ExtResource("3_jul53")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -1.5, 0, 1.5)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=192369201]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)

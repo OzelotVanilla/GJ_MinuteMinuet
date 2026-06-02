@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bqw8dks05dtab"]
+
+[ext_resource type="PackedScene" uid="uid://cnruthbjgg3i7" path="res://prefabs/store_huts/StoreHut_Green.tscn" id="1_da82v"]
+[ext_resource type="PackedScene" uid="uid://165tdqeqvab1" path="res://assets/3d_model/nobori/nobori.glb" id="2_1kr3w"]
+[ext_resource type="PackedScene" uid="uid://cf5tgyoown4gp" path="res://assets/3d_kits/kenney_food/bowl-broth.glb" id="3_1kr3w"]
+[ext_resource type="PackedScene" uid="uid://dlbbyjhl1wga1" path="res://assets/3d_kits/kenney_food/pot-stew.glb" id="4_q1h8j"]
+[ext_resource type="PackedScene" uid="uid://dp1axv4em03ri" path="res://assets/3d_kits/kenney_food/pot-lid.glb" id="5_bd8lk"]
+[ext_resource type="PackedScene" uid="uid://xdnlcpb10i5v" path="res://assets/3d_kits/kenney_food/utensil-spoon.glb" id="6_bqbp4"]
+[ext_resource type="PackedScene" uid="uid://b5u4n2x3hlgd4" path="res://prefabs/box_with_item/BoxWithVegetables.tscn" id="7_bd8lk"]
+[ext_resource type="PackedScene" uid="uid://c3ghaigctmh51" path="res://assets/3d_kits/kenney_fancy_town/stall-stool.glb" id="8_bqbp4"]
+
+[node name="StoreHutRamen" type="Node3D" unique_id=1435036016]
+
+[node name="StoreHut_Green" parent="." unique_id=309244054 instance=ExtResource("1_da82v")]
+
+[node name="Nobori" parent="." unique_id=120181231 instance=ExtResource("2_1kr3w")]
+transform = Transform3D(-2.1855694e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.1855694e-08, -0.75, 0, 0)
+
+[node name="RamenLabel" type="Label3D" parent="." unique_id=1671309097]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.8563408, 0.5981311, 0)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "ラ
+丨
+メ
+ン"
+font_size = 20
+line_spacing = 15.0
+
+[node name="RamenBowl" parent="." unique_id=1671851736 instance=ExtResource("3_1kr3w")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.22397554, 0.36717868, -0.0118995905)
+
+[node name="Pot" parent="." unique_id=1944999632 instance=ExtResource("4_q1h8j")]
+transform = Transform3D(-2.1855694e-08, 0, -0.5, 0, 0.8080413, 0, 0.5, 0, -2.1855694e-08, -0.17004824, 0.3641417, -0.017704487)
+
+[node name="PotLid" parent="." unique_id=1854166691 instance=ExtResource("5_bd8lk")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.2190085, 0.6565348, -0.08482434)
+
+[node name="PotSpoon" parent="." unique_id=930251402 instance=ExtResource("6_bqbp4")]
+transform = Transform3D(0.121350124, -0.37365785, -0.6968888, 0.76088035, 0.24710554, 0, 0.21525635, -0.6628112, 0.39286897, -0.092540964, 0.62083316, 0.08975817)
+
+[node name="Boxes" type="Node3D" parent="." unique_id=1094026333]
+
+[node name="BoxWithVegetables_01" parent="Boxes" unique_id=357035467 instance=ExtResource("7_bd8lk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35184503, 0, 0.68452346)
+
+[node name="BoxWithVegetables_02" parent="Boxes" unique_id=626302191 instance=ExtResource("7_bd8lk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26395392, 0, 1.0365311)
+
+[node name="BoxWithVegetables_03" parent="Boxes" unique_id=1151076250 instance=ExtResource("7_bd8lk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5745995, 0, 0.52481186)
+
+[node name="Stoll" parent="." unique_id=448363004 instance=ExtResource("8_bqbp4")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -0.3305847, 0, 0.9539602)

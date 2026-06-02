@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://kywp5bpv3r77"]
+
+[ext_resource type="PackedScene" uid="uid://ucqqpjc3jmx4" path="res://assets/3d_kits/kenney_fancy_town/stall.glb" id="1_lurfh"]
+[ext_resource type="PackedScene" uid="uid://c3ghaigctmh51" path="res://assets/3d_kits/kenney_fancy_town/stall-stool.glb" id="2_yf0uf"]
+
+[node name="TableWithChair" type="Node3D" unique_id=199218625]
+
+[node name="stall2" parent="." unique_id=29617639 instance=ExtResource("1_lurfh")]
+
+[node name="stall-stool2" parent="." unique_id=448363004 instance=ExtResource("2_yf0uf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6934268, 0, -0.20414937)
+
+[node name="stall-stool3" parent="." unique_id=545034137 instance=ExtResource("2_yf0uf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.60283804, 0, 0.25550753)
+
+[node name="stall-stool4" parent="." unique_id=814912547 instance=ExtResource("2_yf0uf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5589225, 0, -0.21358827)
+
+[node name="stall-stool5" parent="." unique_id=2130511907 instance=ExtResource("2_yf0uf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5948534, 0, 0.25351143)

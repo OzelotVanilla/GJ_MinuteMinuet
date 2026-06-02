@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b5u4n2x3hlgd4"]
+
+[ext_resource type="PackedScene" uid="uid://cnbkgpnseqhdv" path="res://prefabs/box_with_item/BoxBase.tscn" id="1_u4nb8"]
+[ext_resource type="PackedScene" uid="uid://brqp630bxbl6a" path="res://assets/3d_kits/kenney_food/carrot.glb" id="2_gytro"]
+
+[node name="BoxWithVegetables" type="Node3D" unique_id=357035467]
+
+[node name="BoxBase" parent="." unique_id=873103010 instance=ExtResource("1_u4nb8")]
+
+[node name="Vegetables" type="Node3D" parent="." unique_id=464015294]
+
+[node name="Carrot_01" parent="Vegetables" unique_id=12222881 instance=ExtResource("2_gytro")]
+transform = Transform3D(-1.0920855e-08, -0.24984005, 0.008941324, 0.25, -1.0927847e-08, 0, 3.908377e-10, 0.008941324, 0.24984005, 0.08243241, 0.19010311, -0.072241805)
+
+[node name="Carrot_02" parent="Vegetables" unique_id=1523146276 instance=ExtResource("2_gytro")]
+transform = Transform3D(-1.0858404e-08, -0.24841133, -0.028139163, 0.25, -1.0927847e-08, 0, -1.2300019e-09, -0.028139163, 0.24841133, 0.06814011, 0.19010311, -0.03305345)
+
+[node name="Carrot_03" parent="Vegetables" unique_id=428159092 instance=ExtResource("2_gytro")]
+transform = Transform3D(-1.09123075e-08, -0.24964449, 0.0133277215, 0.25, -1.0927847e-08, 0, 5.825732e-10, 0.0133277215, 0.24964449, 0.061224543, 0.19010311, -0.008157305)
+
+[node name="Carrot_04" parent="Vegetables" unique_id=1643223411 instance=ExtResource("2_gytro")]
+transform = Transform3D(-1.0926043e-08, -0.24995874, 0.0045415084, 0.25, -1.0927847e-08, 0, 1.9851563e-10, 0.0045415084, 0.24995874, 0.06491288, 0.19010311, 0.027342781)
+
+[node name="Carrot_05" parent="Vegetables" unique_id=689621464 instance=ExtResource("2_gytro")]
+transform = Transform3D(-1.0654999e-08, -0.24375795, -0.05551632, 0.25, -1.0927847e-08, 0, -2.4266955e-09, -0.05551632, 0.24375795, 0.062146686, 0.19010311, 0.08036235)

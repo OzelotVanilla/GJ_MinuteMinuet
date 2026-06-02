@@ -1,0 +1,142 @@
+[gd_scene format=3 uid="uid://dk5ir5r8nvvua"]
+
+[ext_resource type="PackedScene" uid="uid://dul6kepj7ubhi" path="res://prefabs/store_huts/StoreHut_Red.tscn" id="1_3i364"]
+[ext_resource type="PackedScene" uid="uid://ixskp12c5dwy" path="res://assets/3d_kits/kenney_food/bowl.glb" id="2_8mnf0"]
+[ext_resource type="PackedScene" uid="uid://duph7am4884u7" path="res://assets/3d_kits/kenney_food/cooking-spoon.glb" id="3_ksmh4"]
+[ext_resource type="PackedScene" uid="uid://qwy5kg1v57q7" path="res://assets/3d_kits/kenney_food/plate-dinner.glb" id="3_ojyof"]
+[ext_resource type="PackedScene" uid="uid://d2idxqd51jkrk" path="res://assets/3d_kits/kenney_food/cutting-board-japanese.glb" id="3_rdjv1"]
+[ext_resource type="PackedScene" uid="uid://165tdqeqvab1" path="res://assets/3d_model/nobori/nobori.glb" id="3_tvq85"]
+[ext_resource type="PackedScene" uid="uid://djobc1u1cg7lh" path="res://assets/3d_kits/kenney_food/sushi-egg.glb" id="4_rdjv1"]
+[ext_resource type="PackedScene" uid="uid://dwyqug4v7c45s" path="res://assets/3d_kits/kenney_food/sushi-salmon.glb" id="5_gvodu"]
+[ext_resource type="PackedScene" uid="uid://botka0f7d77r2" path="res://assets/3d_kits/kenney_food/cutting-board.glb" id="5_ycaog"]
+[ext_resource type="PackedScene" uid="uid://bmbwkak7dgice" path="res://assets/3d_kits/kenney_food/tomato.glb" id="6_jbyn6"]
+[ext_resource type="PackedScene" uid="uid://de4l10pwp451r" path="res://assets/3d_kits/kenney_food/knife-block.glb" id="6_ove06"]
+[ext_resource type="PackedScene" uid="uid://nfdr4gba6btt" path="res://assets/3d_kits/kenney_food/maki-roe.glb" id="6_yduer"]
+[ext_resource type="PackedScene" uid="uid://coji8g3dsrreu" path="res://assets/3d_kits/kenney_food/tomato-slice.glb" id="7_cnb0n"]
+[ext_resource type="PackedScene" uid="uid://vgci5myepc0r" path="res://assets/3d_kits/kenney_food/maki-vegetable.glb" id="7_ojyof"]
+[ext_resource type="PackedScene" uid="uid://cwtfnrshgr5uf" path="res://assets/3d_kits/kenney_food/frying-pan.glb" id="9_xi41l"]
+[ext_resource type="PackedScene" uid="uid://dlbbyjhl1wga1" path="res://assets/3d_kits/kenney_food/pot-stew.glb" id="9_yduer"]
+[ext_resource type="PackedScene" uid="uid://b6rstckfpjqq3" path="res://assets/3d_kits/kenney_food/cooking-spatula.glb" id="10_isomn"]
+[ext_resource type="PackedScene" uid="uid://b5nwpi8a6tp88" path="res://assets/3d_kits/kenney_food/broccoli.glb" id="11_sqgm4"]
+
+[node name="StoreHutMeshiDokoro" type="Node3D" unique_id=374267260]
+
+[node name="StoreHut_Red_01" parent="." unique_id=309244054 instance=ExtResource("1_3i364")]
+transform = Transform3D(0.9998294, 0, -0.018470468, 0, 1, 0, 0.018470468, 0, 0.9998294, -0.5088408, 0, 0)
+
+[node name="PotOfStew" parent="StoreHut_Red_01" unique_id=1944999632 instance=ExtResource("9_yduer")]
+transform = Transform3D(-0.094812706, 0, 0.49092823, 0, 0.5, 0, -0.49092823, 0, -0.094812706, -0.25026417, 0.3650556, 0.017867252)
+
+[node name="cooking-spoon2" parent="StoreHut_Red_01/PotOfStew" unique_id=1771298491 instance=ExtResource("3_ksmh4")]
+transform = Transform3D(0.24050571, -0.7567537, -0.097371586, 0.75675356, 0.2235596, 0.13170156, -0.09737161, -0.13170154, 0.7830542, 0.25173324, 0.26879555, 0.043810368)
+
+[node name="plate-dinner2" parent="StoreHut_Red_01" unique_id=60820962 instance=ExtResource("3_ojyof")]
+transform = Transform3D(0.34994033, 0, 0.0064646644, 0, 0.35, 0, -0.0064646644, 0, 0.34994033, 0.14462125, 0.365, 0.11444816)
+
+[node name="StoreHut_Red_02" parent="." unique_id=614996592 instance=ExtResource("1_3i364")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5430834, 0, 0.006847501)
+
+[node name="CuttingBoard" parent="StoreHut_Red_02" unique_id=323336392 instance=ExtResource("5_ycaog")]
+transform = Transform3D(-0.0010976688, 0, 0.34999827, 0, 0.35, 0, -0.34999827, 0, -0.0010976688, 0.10929084, 0.36500007, -0.098961234)
+
+[node name="Tomato" parent="StoreHut_Red_02/CuttingBoard" unique_id=7033227 instance=ExtResource("6_jbyn6")]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, -0.10604164, 0.06819463, 0.26912177)
+
+[node name="TomatoSlice" parent="StoreHut_Red_02/CuttingBoard" unique_id=905274311 instance=ExtResource("7_cnb0n")]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0.069653034, 0)
+
+[node name="KnifeBlock" parent="StoreHut_Red_02" unique_id=262632452 instance=ExtResource("6_ove06")]
+transform = Transform3D(-0.018093996, 0, 0.34953198, 0, 0.35, 0, -0.34953198, 0, -0.018093996, 0.38041782, 0.365, -0.09731889)
+
+[node name="FryingPan" parent="StoreHut_Red_02" unique_id=314018215 instance=ExtResource("9_xi41l")]
+transform = Transform3D(0.29674196, 0, -0.18559146, 0, 0.35, 0, 0.18559146, 0, 0.29674196, -0.26502237, 0.365, -0.058476448)
+
+[node name="CookingSpoon" parent="StoreHut_Red_02/FryingPan" unique_id=638915289 instance=ExtResource("10_isomn")]
+transform = Transform3D(-0.75197387, 0.0013892679, -0.27300787, -0.002681847, -0.7999885, 0.0033162779, -0.272998, 0.004032322, 0.7519679, -0.30432796, 0.11739731, -0.08988482)
+
+[node name="Broccoli" parent="StoreHut_Red_02" unique_id=428137488 instance=ExtResource("11_sqgm4")]
+transform = Transform3D(0.35, 0, 0, 0, 0.23810095, -0.25653055, 0, 0.25653055, 0.23810095, -0.039904535, 0.36993015, 0.075520754)
+
+[node name="StoreHut_Red_03" parent="." unique_id=23983846 instance=ExtResource("1_3i364")]
+transform = Transform3D(-0.013057183, 0, -0.99991477, 0, 1, 0, 0.99991477, 0, -0.013057183, -1.301626, 0, -0.86159396)
+
+[node name="Bowl_01" parent="StoreHut_Red_03" unique_id=1199305915 instance=ExtResource("2_8mnf0")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.29463005, 0.3641029, 0.15243196)
+
+[node name="CuttingBoard_01" parent="StoreHut_Red_03" unique_id=1852695724 instance=ExtResource("3_rdjv1")]
+transform = Transform3D(-2.188608e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.188608e-08, 0.16081822, 0.36630756, 0.18248665)
+
+[node name="EggSushi_01" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=485152235 instance=ExtResource("4_rdjv1")]
+transform = Transform3D(-0.0078342855, 0, 0.5999489, 0, 0.6, 0, -0.5999489, 0, -0.0078342855, -0.09825206, 0.08354956, 0.3018502)
+
+[node name="EggSushi_02" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=2007692302 instance=ExtResource("4_rdjv1")]
+transform = Transform3D(-0.0078342855, 0, 0.5999489, 0, 0.6, 0, -0.5999489, 0, -0.0078342855, -0.09802365, 0.08354956, 0.22784185)
+
+[node name="EggSushi_03" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=298349890 instance=ExtResource("4_rdjv1")]
+transform = Transform3D(-0.0078342855, 0, 0.5999489, 0, 0.6, 0, -0.5999489, 0, -0.0078342855, -0.098964214, 0.0864532, 0.15582395)
+
+[node name="EggSushi_04" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=1050937750 instance=ExtResource("4_rdjv1")]
+transform = Transform3D(-0.0078342855, 0, 0.5999489, 0, 0.6, 0, -0.5999489, 0, -0.0078342855, -0.098825455, 0.0864532, 0.08375585)
+
+[node name="EggSushi_05" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=2104831680 instance=ExtResource("4_rdjv1")]
+transform = Transform3D(-0.0078342855, 0, 0.5999489, 0, 0.6, 0, -0.5999489, 0, -0.0078342855, -0.10071468, 0.0864532, 0.010768414)
+
+[node name="EggSushi_06" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=1439947532 instance=ExtResource("4_rdjv1")]
+transform = Transform3D(-0.0078342855, 0, 0.5999489, 0, 0.6, 0, -0.5999489, 0, -0.0078342855, -0.103060246, 0.0864532, -0.13655078)
+
+[node name="SalmonSushi_01" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=1844123065 instance=ExtResource("5_gvodu")]
+transform = Transform3D(-2.514571e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.514571e-08, 0.05591321, 0.08738488, 0.3029592)
+
+[node name="SalmonSushi_02" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=275491452 instance=ExtResource("5_gvodu")]
+transform = Transform3D(-2.514571e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.514571e-08, 0.055980682, 0.08738488, 0.23694706)
+
+[node name="SalmonSushi_03" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=1851944388 instance=ExtResource("5_gvodu")]
+transform = Transform3D(-2.514571e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.514571e-08, 0.057857275, 0.08738488, 0.15616262)
+
+[node name="SalmonSushi_04" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=1245660369 instance=ExtResource("5_gvodu")]
+transform = Transform3D(-2.514571e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.514571e-08, 0.055316925, 0.08738488, 0.07819986)
+
+[node name="SalmonSushi_05" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=1479638175 instance=ExtResource("5_gvodu")]
+transform = Transform3D(-2.514571e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.514571e-08, 0.05576873, 0.08738488, 0.0037901402)
+
+[node name="SalmonSushi_06" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=2136353156 instance=ExtResource("5_gvodu")]
+transform = Transform3D(-2.514571e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.514571e-08, 0.059179783, 0.08738488, -0.06915295)
+
+[node name="SalmonSushi_07" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=507016114 instance=ExtResource("5_gvodu")]
+transform = Transform3D(-2.514571e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.514571e-08, 0.051038027, 0.08738488, -0.14234376)
+
+[node name="RollSushi_01" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=1104745359 instance=ExtResource("6_yduer")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -0.12551856, 0.08194572, -0.29154003)
+
+[node name="RollSushi_02" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=1713167531 instance=ExtResource("6_yduer")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -0.123788595, 0.08194572, -0.36152196)
+
+[node name="RollSushi_03" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=940137595 instance=ExtResource("6_yduer")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -0.05143094, 0.08194572, -0.28676546)
+
+[node name="RollSushi_04" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=1610203997 instance=ExtResource("6_yduer")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -0.050703526, 0.08194572, -0.35898674)
+
+[node name="RollVegetableSushi_01" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=337095866 instance=ExtResource("7_ojyof")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0.025847435, 0.08194572, -0.28750348)
+
+[node name="RollVegetableSushi_02" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=1387132042 instance=ExtResource("7_ojyof")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0.026767015, 0.08194572, -0.36010492)
+
+[node name="RollVegetableSushi_03" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=364272414 instance=ExtResource("7_ojyof")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0.10047865, 0.08194572, -0.28980374)
+
+[node name="RollVegetableSushi_04" parent="StoreHut_Red_03/CuttingBoard_01" unique_id=908157660 instance=ExtResource("7_ojyof")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0.09812212, 0.08194572, -0.36267662)
+
+[node name="nobori" parent="." unique_id=695397206 instance=ExtResource("3_tvq85")]
+transform = Transform3D(0.2553363, 0, 0.42988765, 0, 0.5, 0, -0.42988765, 0, 0.2553363, -1.343084, -1.1920929e-07, -0.15691817)
+
+[node name="Label3D" type="Label3D" parent="." unique_id=1333342117]
+transform = Transform3D(0.8453473, 0, -0.5342172, 0, 1, 0, 0.5342172, 0, 0.8453473, -1.2527927, 0.69543785, -0.09694636)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "飯
+処"
+font_size = 24
+line_spacing = 30.0
