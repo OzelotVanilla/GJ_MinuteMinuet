@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://djflcv32wmtgp"]
+
+[ext_resource type="PackedScene" uid="uid://cpjm4otow2h15" path="res://assets/3d_kits/kenney_character/character_e.glb" id="1_4f46a"]
+[ext_resource type="Script" uid="uid://clfmr58rtxd15" path="res://prefabs/player/Player.gd" id="1_aeq48"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4f46a"]
+size = Vector3(0.8, 2.7, 0.8)
+
+[node name="Player" type="CharacterBody3D" unique_id=1670083053]
+collision_layer = 2
+script = ExtResource("1_aeq48")
+mouse_sensitivity = null
+camera_pitch_min = null
+camera_pitch_max = null
+
+[node name="Mesh" parent="." unique_id=368535579 instance=ExtResource("1_4f46a")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1235663477]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.35, 0)
+shape = SubResource("BoxShape3D_4f46a")
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1043968895]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+
+[node name="SpringArm" type="SpringArm3D" parent="CameraPivot" unique_id=1188129550]
+transform = Transform3D(1, 0, 0, 0, 0.93969256, 0.3420201, 0, -0.3420201, 0.93969256, 0, 0, 0)
+spring_length = 5.0
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm" unique_id=143570234]
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0)
+current = true
