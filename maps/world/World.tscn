@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://byc8o3eef63v6"]
+
+[ext_resource type="Script" uid="uid://v3sbohbd6b1f" path="res://maps/world/Environment.gd" id="1_l7wq0"]
+[ext_resource type="PackedScene" uid="uid://dpysspst5dkx3" path="res://maps/central_plaza/CentralPlaza.tscn" id="1_lfgns"]
+[ext_resource type="PackedScene" uid="uid://bx18qhwby57w" path="res://maps/living_house_area/LivingHouseArea.tscn" id="2_7ljkq"]
+[ext_resource type="Shader" uid="uid://5nmhjsyxvwct" path="res://maps/world/sky_shader.gdshader" id="2_206no"]
+[ext_resource type="PackedScene" uid="uid://cvey8o30e18qj" path="res://maps/camp_area/CampArea.tscn" id="3_oyk85"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_86dt2"]
+shader = ExtResource("2_206no")
+shader_parameter/sky_top_color = Color(0.09019608, 0.09803922, 0.09019608, 1)
+shader_parameter/sky_horizon_color = Color(0.09019608, 0.09803922, 0.09019608, 1)
+shader_parameter/sun_size_override = 1.0
+shader_parameter/sun_colour_override = Color(1, 0.9883065, 0.9219721, 1)
+shader_parameter/inv_sky_curve = 4.0
+shader_parameter/ground_bottom_color = Color(0.09019608, 0.09803922, 0.09019608, 1)
+shader_parameter/ground_horizon_color = Color(0.09019608, 0.09803922, 0.09019608, 1)
+shader_parameter/inv_ground_curve = 30.0
+shader_parameter/sun_angle_max = 0.877
+shader_parameter/moon_angle_max = 0.9965
+shader_parameter/moon_light_energy_scale = 6.5
+shader_parameter/inv_sun_curve = 22.78
+shader_parameter/inv_moon_curve = 22.78
+shader_parameter/exposure = 1.0
+shader_parameter/cloud_1_direction = Vector2(-1, 1)
+shader_parameter/cloud_2_direction = Vector2(1, -1)
+shader_parameter/cloud_1_speed = 0.5
+shader_parameter/cloud_2_speed = 0.5
+shader_parameter/cloud_scale = Vector2(0.05, 0.05)
+shader_parameter/cloud_distance = 0.035
+shader_parameter/cloud_height_scale = 0.4
+shader_parameter/cloud_colour_modifier = Color(0.27058825, 0.34117648, 0.39607844, 1)
+
+[sub_resource type="Sky" id="Sky_xm33v"]
+sky_material = SubResource("ShaderMaterial_86dt2")
+
+[sub_resource type="Environment" id="Environment_xm33v"]
+background_mode = 2
+background_energy_multiplier = 0.8
+sky = SubResource("Sky_xm33v")
+ambient_light_source = 2
+ambient_light_color = Color(0.27058825, 0.34117648, 0.39607844, 1)
+ambient_light_energy = 0.05
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xm33v"]
+size = Vector3(500, 1, 500)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lfgns"]
+albedo_color = Color(0.2627451, 0.23921569, 0.23529412, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lfgns"]
+material = SubResource("StandardMaterial3D_lfgns")
+size = Vector3(500, 1, 500)
+
+[node name="World" type="Node3D" unique_id=1423156321]
+
+[node name="Environment" type="Node3D" parent="." unique_id=1704407670]
+script = ExtResource("1_l7wq0")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Environment" unique_id=998160141]
+environment = SubResource("Environment_xm33v")
+
+[node name="SunLight" type="DirectionalLight3D" parent="Environment/WorldEnvironment" unique_id=1827251494]
+transform = Transform3D(1, 0, 0, 0, -4.371137e-08, -0.9999996, 0, 0.9999996, -4.371137e-08, 0, 0, 0)
+light_energy = 0.0
+shadow_enabled = true
+shadow_blur = 2.0
+
+[node name="MoonLight" type="DirectionalLight3D" parent="Environment/WorldEnvironment" unique_id=521590132]
+transform = Transform3D(1, 0, 0, 0, 0.25881898, 0.96592546, 0, -0.96592546, 0.25881898, 0, 0, 0)
+light_color = Color(0.972549, 0.95686275, 0.9019608, 1)
+light_energy = 0.18
+shadow_enabled = true
+shadow_blur = 2.0
+
+[node name="Groud" type="Node3D" parent="." unique_id=307753142]
+
+[node name="BaseGround" type="StaticBody3D" parent="Groud" unique_id=883117909]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5141853, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Groud/BaseGround" unique_id=283360700]
+shape = SubResource("BoxShape3D_xm33v")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Groud/BaseGround" unique_id=1594490586]
+mesh = SubResource("BoxMesh_lfgns")
+
+[node name="Areas" type="Node3D" parent="." unique_id=1288140606]
+
+[node name="CentralPlaza" parent="Areas" unique_id=1493630391 instance=ExtResource("1_lfgns")]
+
+[node name="LivingHouseArea" parent="Areas" unique_id=1881787011 instance=ExtResource("2_7ljkq")]
+transform = Transform3D(0.8774349, 0, 0.47969574, 0, 1, 0, -0.47969574, 0, 0.8774349, -13.651822, 4.7683716e-07, 14.310148)
+
+[node name="CampArea" parent="Areas" unique_id=1363255209 instance=ExtResource("3_oyk85")]
+transform = Transform3D(-0.9808425, 0, -0.1948028, 0, 1, 0, 0.1948028, 0, -0.9808425, 5.3804646, 0, 20.19518)
