@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://kywp5bpv3r77"]
 
-[ext_resource type="PackedScene" uid="uid://ucqqpjc3jmx4" path="res://assets/3d_kits/kenney_fancy_town/stall.glb" id="1_lurfh"]
-[ext_resource type="PackedScene" uid="uid://c3ghaigctmh51" path="res://assets/3d_kits/kenney_fancy_town/stall-stool.glb" id="2_yf0uf"]
+[ext_resource type="PackedScene" uid="uid://os6paj2be6q8" path="res://assets/3d_kits/kenney_fancy_town/stall$col.glb" id="1_lurfh"]
+[ext_resource type="PackedScene" uid="uid://db5dhw75538xm" path="res://assets/3d_kits/kenney_fancy_town/stall_stool$col.glb" id="2_yf0uf"]
 
 [node name="TableWithChair" type="Node3D" unique_id=199218625]
 

@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://im0sbh3nwv5y"]
 
-[ext_resource type="PackedScene" uid="uid://1y3w4doknfb3" path="res://assets/3d_kits/kenney_fancy_town/fountain-round.glb" id="1_yrqjs"]
-[ext_resource type="PackedScene" uid="uid://cajq6gp55fplg" path="res://assets/3d_kits/kenney_fancy_town/fountain-round-detail.glb" id="2_ryjmt"]
-[ext_resource type="PackedScene" uid="uid://dqyho5hotrcl" path="res://assets/3d_kits/kenney_fancy_town/stairs-full-corner-outer.glb" id="3_jul53"]
-[ext_resource type="PackedScene" uid="uid://sofyrn433esq" path="res://assets/3d_kits/kenney_fancy_town/stairs-full.glb" id="4_uh7qs"]
+[ext_resource type="PackedScene" uid="uid://unsama171d1t" path="res://assets/3d_kits/kenney_fancy_town/fountain_round$col.glb" id="1_yrqjs"]
+[ext_resource type="PackedScene" uid="uid://bgnutuoq6ju5m" path="res://assets/3d_kits/kenney_fancy_town/fountain_round_detail$col.glb" id="2_ryjmt"]
+[ext_resource type="PackedScene" uid="uid://4nh47fgpftl3" path="res://assets/3d_kits/kenney_fancy_town/stairs_full_corner_outer$col.glb" id="3_jul53"]
+[ext_resource type="PackedScene" uid="uid://bfjmcxil7kk13" path="res://assets/3d_kits/kenney_fancy_town/stairs_full$col.glb" id="4_uh7qs"]
 
 [node name="PlazaFountain" type="Node3D" unique_id=604092553]
 

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b5u4n2x3hlgd4"]
 
 [ext_resource type="PackedScene" uid="uid://cnbkgpnseqhdv" path="res://prefabs/box_with_item/BoxBase.tscn" id="1_u4nb8"]
-[ext_resource type="PackedScene" uid="uid://brqp630bxbl6a" path="res://assets/3d_kits/kenney_food/carrot.glb" id="2_gytro"]
+[ext_resource type="PackedScene" uid="uid://jjmala167584" path="res://assets/3d_kits/kenney_food/carrot$col.glb" id="2_gytro"]
 
 [node name="BoxWithVegetables" type="Node3D" unique_id=357035467]
 

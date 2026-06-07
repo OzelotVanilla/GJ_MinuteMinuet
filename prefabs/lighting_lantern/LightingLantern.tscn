@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://wq8kf0iy5kbf"]
 
-[ext_resource type="PackedScene" uid="uid://cor2pynnwkxs6" path="res://assets/3d_kits/kenney_fancy_town/lantern.glb" id="1_l4fb5"]
+[ext_resource type="PackedScene" uid="uid://pmhxxva1bxib" path="res://assets/3d_kits/kenney_fancy_town/lantern$col.glb" id="1_l4fb5"]
 
 [node name="LightingLantern" type="Node3D" unique_id=1310366735]
 

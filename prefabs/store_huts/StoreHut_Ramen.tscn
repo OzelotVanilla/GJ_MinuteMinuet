@@ -2,12 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://cnruthbjgg3i7" path="res://prefabs/store_huts/StoreHut_Green.tscn" id="1_da82v"]
 [ext_resource type="PackedScene" uid="uid://165tdqeqvab1" path="res://assets/3d_model/nobori/nobori.glb" id="2_1kr3w"]
-[ext_resource type="PackedScene" uid="uid://cf5tgyoown4gp" path="res://assets/3d_kits/kenney_food/bowl-broth.glb" id="3_1kr3w"]
-[ext_resource type="PackedScene" uid="uid://dlbbyjhl1wga1" path="res://assets/3d_kits/kenney_food/pot-stew.glb" id="4_q1h8j"]
-[ext_resource type="PackedScene" uid="uid://dp1axv4em03ri" path="res://assets/3d_kits/kenney_food/pot-lid.glb" id="5_bd8lk"]
-[ext_resource type="PackedScene" uid="uid://xdnlcpb10i5v" path="res://assets/3d_kits/kenney_food/utensil-spoon.glb" id="6_bqbp4"]
+[ext_resource type="PackedScene" uid="uid://bxtocv8xwdhan" path="res://assets/3d_kits/kenney_food/bowl_broth$col.glb" id="3_1kr3w"]
+[ext_resource type="PackedScene" uid="uid://c5movqpa3n3r6" path="res://assets/3d_kits/kenney_food/pot_stew$col.glb" id="4_q1h8j"]
+[ext_resource type="PackedScene" uid="uid://b4rxwiybpdubq" path="res://assets/3d_kits/kenney_food/pot_lid$col.glb" id="5_bd8lk"]
+[ext_resource type="PackedScene" uid="uid://cy4jkxscgvgng" path="res://assets/3d_kits/kenney_food/utensil_spoon$col.glb" id="6_bqbp4"]
 [ext_resource type="PackedScene" uid="uid://b5u4n2x3hlgd4" path="res://prefabs/box_with_item/BoxWithVegetables.tscn" id="7_bd8lk"]
-[ext_resource type="PackedScene" uid="uid://c3ghaigctmh51" path="res://assets/3d_kits/kenney_fancy_town/stall-stool.glb" id="8_bqbp4"]
+[ext_resource type="PackedScene" uid="uid://db5dhw75538xm" path="res://assets/3d_kits/kenney_fancy_town/stall_stool$col.glb" id="8_bqbp4"]
 
 [node name="StoreHutRamen" type="Node3D" unique_id=1435036016]
 

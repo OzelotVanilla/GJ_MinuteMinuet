@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ceigfq8a5c2wk"]
 
-[ext_resource type="PackedScene" uid="uid://cai1r01g4r6a5" path="res://assets/3d_kits/kenney_fancy_town/stall-bench.glb" id="1_602ll"]
-[ext_resource type="PackedScene" uid="uid://brogjyp47fht3" path="res://assets/3d_kits/kenney_fancy_town/fence.glb" id="2_0y27e"]
+[ext_resource type="PackedScene" uid="uid://2qa3iqwrk67h" path="res://assets/3d_kits/kenney_fancy_town/stall_bench$col.glb" id="1_602ll"]
+[ext_resource type="PackedScene" uid="uid://8oryqpqd1adr" path="res://assets/3d_kits/kenney_fancy_town/fence$col.glb" id="2_0y27e"]
 
 [node name="Bench" type="Node3D" unique_id=1773540662]
 

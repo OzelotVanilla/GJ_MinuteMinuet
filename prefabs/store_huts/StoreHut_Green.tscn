@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cnruthbjgg3i7"]
 
-[ext_resource type="PackedScene" uid="uid://cb3jycsdbnj3a" path="res://assets/3d_kits/kenney_fancy_town/stall-green.glb" id="1_8lix7"]
+[ext_resource type="PackedScene" uid="uid://bfydbxg5xrwuh" path="res://assets/3d_kits/kenney_fancy_town/stall_green$col.glb" id="1_8lix7"]
 
 [node name="StoreHut_Green" type="Node3D" unique_id=309244054]
 

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cnbkgpnseqhdv"]
 
-[ext_resource type="PackedScene" uid="uid://ueyg08ca4hnp" path="res://assets/3d_kits/kenney_survival/box-open.glb" id="1_2totp"]
+[ext_resource type="PackedScene" uid="uid://bdn4v3cw50020" path="res://assets/3d_kits/kenney_survival/box_open$col.glb" id="1_2totp"]
 
 [node name="BoxBase" type="Node3D" unique_id=873103010]
 
