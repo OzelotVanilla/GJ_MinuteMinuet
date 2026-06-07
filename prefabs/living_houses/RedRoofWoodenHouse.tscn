@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://bff1dvk3wddjp"]
+
+[ext_resource type="PackedScene" uid="uid://dcfo27dkj8va3" path="res://assets/3d_kits/kenney_fancy_town/wall_wood_door$col.glb" id="1_a0rvd"]
+[ext_resource type="Script" uid="uid://dl5m8mk8ls5ym" path="res://prefabs/living_houses/RedRoofWoodenHouse.gd" id="1_ylv5c"]
+[ext_resource type="PackedScene" uid="uid://b6j6fknv861e0" path="res://assets/3d_kits/kenney_fancy_town/roof_high_gable_top$col.glb" id="2_po5q5"]
+[ext_resource type="PackedScene" uid="uid://cxc7kwk37x67v" path="res://assets/3d_kits/kenney_fancy_town/roof_high_left$col.glb" id="2_t30ik"]
+[ext_resource type="PackedScene" uid="uid://bnb2y8hve6dcg" path="res://assets/3d_kits/kenney_fancy_town/roof_high_right$col.glb" id="3_iipyy"]
+[ext_resource type="PackedScene" uid="uid://0hv1bf4ruw3k" path="res://assets/3d_kits/kenney_fancy_town/wall_wood_detail_diagonal$col.glb" id="3_po5q5"]
+[ext_resource type="PackedScene" uid="uid://1x6huloe3aoe" path="res://assets/3d_kits/kenney_fancy_town/wall_wood_window_shutters$col.glb" id="4_4g8la"]
+[ext_resource type="PackedScene" uid="uid://bqfhge67kc4pc" path="res://assets/3d_kits/kenney_fancy_town/roof_high$col.glb" id="4_iipyy"]
+[ext_resource type="PackedScene" uid="uid://pdb0cqa7tkby" path="res://assets/3d_kits/kenney_fancy_town/wall_wood$col.glb" id="8_eg2ld"]
+[ext_resource type="PackedScene" uid="uid://v1plxdhnwpqu" path="res://assets/3d_kits/kenney_furniture/floor_full$col.glb" id="9_igqxe"]
+[ext_resource type="PackedScene" uid="uid://c1prg37yxunrn" path="res://assets/3d_kits/kenney_furniture/bed_single$col.glb" id="10_ymefy"]
+[ext_resource type="PackedScene" uid="uid://1idw37jsipcf" path="res://assets/3d_kits/kenney_furniture/table_cloth$col.glb" id="11_qxdw8"]
+[ext_resource type="PackedScene" uid="uid://dqbv88ahiligb" path="res://assets/3d_kits/kenney_furniture/chair_cushion$col.glb" id="12_rade7"]
+[ext_resource type="PackedScene" uid="uid://ur27u3utqwmp" path="res://assets/3d_kits/kenney_furniture/lamp_round_table$col.glb" id="13_edjpv"]
+[ext_resource type="PackedScene" uid="uid://uk7b5voth331" path="res://assets/3d_kits/kenney_furniture/laptop$col.glb" id="14_edjpv"]
+[ext_resource type="PackedScene" uid="uid://c7tpdbc17tc0l" path="res://assets/3d_kits/kenney_furniture/potted_plant$col.glb" id="15_asqam"]
+[ext_resource type="PackedScene" uid="uid://bt2xfnka2tnon" path="res://assets/3d_kits/kenney_furniture/bookcase_closed_doors$col.glb" id="15_yttc5"]
+[ext_resource type="PackedScene" uid="uid://dbqywp7671qqh" path="res://assets/3d_kits/kenney_furniture/kitchen_sink$col.glb" id="16_gpv8h"]
+[ext_resource type="PackedScene" uid="uid://ghsamhwxug80" path="res://assets/3d_kits/kenney_furniture/kitchen_stove$col.glb" id="17_asqam"]
+[ext_resource type="PackedScene" uid="uid://c2ids8fvd5670" path="res://prefabs/lights/LampWallWithTransparency.tscn" id="17_msv1k"]
+[ext_resource type="PackedScene" uid="uid://cwfy3s06x0wgn" path="res://assets/3d_kits/kenney_furniture/kitchen_fridge$col.glb" id="18_msv1k"]
+
+[node name="RedRoofWoodenHouse" type="Node3D" unique_id=1377295559]
+script = ExtResource("1_ylv5c")
+
+[node name="roof" type="Node3D" parent="." unique_id=1580673372]
+
+[node name="roof-high-gable-top_1" parent="roof" unique_id=2054025433 instance=ExtResource("2_po5q5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="roof-high-gable-top_2" parent="roof" unique_id=782643034 instance=ExtResource("2_po5q5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 0)
+
+[node name="roof-high-left_1" parent="roof" unique_id=422600348 instance=ExtResource("2_t30ik")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.9, 1, 0.90000004)
+
+[node name="roof-high-left_2" parent="roof" unique_id=1241099299 instance=ExtResource("2_t30ik")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -1.9, 1, -0.90000004)
+
+[node name="roof-high-right_1" parent="roof" unique_id=155502091 instance=ExtResource("3_iipyy")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.89999986, 1, -0.8999999)
+
+[node name="roof-high-right_2" parent="roof" unique_id=945433985 instance=ExtResource("3_iipyy")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -1.8999999, 1, 0.9)
+
+[node name="roof-high_2" parent="roof" unique_id=1334985464 instance=ExtResource("4_iipyy")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -1.8999999, 1, -5.9604645e-08)
+
+[node name="roof-high_1" parent="roof" unique_id=1633278806 instance=ExtResource("4_iipyy")]
+transform = Transform3D(-1, 0, 2.6226832e-07, 0, 1, 0, -2.6226832e-07, 0, -1, -0.89999986, 1, 0.09999994)
+
+[node name="wall" type="Node3D" parent="." unique_id=2081437904]
+
+[node name="wall-wood-door" parent="wall" unique_id=2095827806 instance=ExtResource("1_a0rvd")]
+
+[node name="wall-wood-detail-diagonal_1" parent="wall" unique_id=946156738 instance=ExtResource("3_po5q5")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="wall-wood-detail-diagonal_2" parent="wall" unique_id=1458364137 instance=ExtResource("3_po5q5")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="wall-wood-window-shutters_left_1" parent="wall" unique_id=559249220 instance=ExtResource("4_4g8la")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.90000004, 0, 0.90000004)
+
+[node name="wall-wood-window-shutters_left_2" parent="wall" unique_id=1582685273 instance=ExtResource("4_4g8la")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.90000004, 0, 0.90000004)
+
+[node name="wall-wood-window-shutters_middle" parent="wall" unique_id=974865789 instance=ExtResource("4_4g8la")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.9, 0, 3.7252903e-08)
+
+[node name="wall-wood_left_1" parent="wall" unique_id=1334467740 instance=ExtResource("8_eg2ld")]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -1.9000001, 0, 0.9)
+
+[node name="wall-wood_left_2" parent="wall" unique_id=902369240 instance=ExtResource("8_eg2ld")]
+transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -1.9000001, 0, 0.9)
+
+[node name="wall-wood-window-shutters_right_3" parent="wall" unique_id=1847057233 instance=ExtResource("4_4g8la")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.90000004, 0, -0.8999999)
+
+[node name="wall-wood-window-shutters_right_4" parent="wall" unique_id=745034177 instance=ExtResource("4_4g8la")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.9000001, 0, -0.8999999)
+
+[node name="wall-wood_right_1" parent="wall" unique_id=336079156 instance=ExtResource("8_eg2ld")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.90000004, 0, -0.9)
+
+[node name="wall-wood_right_2" parent="wall" unique_id=1232993442 instance=ExtResource("8_eg2ld")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.9000001, 0, -0.9)
+
+[node name="floor" type="Node3D" parent="." unique_id=2111039561]
+
+[node name="floor_full_1" parent="floor" unique_id=573841125 instance=ExtResource("9_igqxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, -0.05, -0.4)
+
+[node name="floor_full_2" parent="floor" unique_id=1170065924 instance=ExtResource("9_igqxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, -0.05, 0.5)
+
+[node name="floor_full_3" parent="floor" unique_id=2031519772 instance=ExtResource("9_igqxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, -0.05, 1.4000001)
+
+[node name="floor_full_4" parent="floor" unique_id=1667140476 instance=ExtResource("9_igqxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3999999, -0.05, -0.39999995)
+
+[node name="floor_full_5" parent="floor" unique_id=1751957799 instance=ExtResource("9_igqxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3999999, -0.05, 0.50000006)
+
+[node name="floor_full_6" parent="floor" unique_id=300837194 instance=ExtResource("9_igqxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3999999, -0.05, 1.4000001)
+
+[node name="floor_full_7" parent="floor" unique_id=741735267 instance=ExtResource("9_igqxe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.05, 0.5)
+
+[node name="furniture" type="Node3D" parent="." unique_id=1902535537]
+
+[node name="bed_single" parent="furniture" unique_id=767056696 instance=ExtResource("10_ymefy")]
+transform = Transform3D(0.8, 0, 1.3987645e-07, 0, 0.8, 0, -1.3987645e-07, 0, 0.8, -2.5500002, 0, -0.34999996)
+
+[node name="bed_lamp_wall" parent="furniture" unique_id=1491450650 instance=ExtResource("17_msv1k")]
+transform = Transform3D(1.1920929e-07, 0, 1, 0, 1, 0, -1, 0, 1.1920929e-07, -2.325, 0.85, 0)
+
+[node name="table_cloth" parent="furniture" unique_id=149577585 instance=ExtResource("11_qxdw8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0, -0.8)
+
+[node name="chair_cushion" parent="furniture" unique_id=1022971299 instance=ExtResource("12_rade7")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.90000004, 0, -0.7)
+
+[node name="lamp_round_table" parent="furniture" unique_id=816150320 instance=ExtResource("13_edjpv")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -1.383, 0.325, -1.1)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="furniture/lamp_round_table" unique_id=1153206499]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.055, 0.2, -0.055)
+light_energy = 0.3
+
+[node name="laptop" parent="furniture" unique_id=1052753803 instance=ExtResource("14_edjpv")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1.1, 0.35, -0.9)
+
+[node name="potted_plant" parent="furniture" unique_id=1566509620 instance=ExtResource("15_asqam")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -0.65, 0.3, -1.15)
+
+[node name="wardrobe" parent="furniture" unique_id=1721600879 instance=ExtResource("15_yttc5")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.9000001, 0, 1.0500001)
+
+[node name="kitchen_lamp_wall" parent="furniture" unique_id=1768293301 instance=ExtResource("17_msv1k")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.475, 0.85, 0.9)
+
+[node name="kitchen_sink" parent="furniture" unique_id=957448803 instance=ExtResource("16_gpv8h")]
+transform = Transform3D(-3.4969112e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.4969112e-08, -0.90000004, 0, 0.6)
+
+[node name="kitchen_stove" parent="furniture" unique_id=1563665455 instance=ExtResource("17_asqam")]
+transform = Transform3D(-3.4969112e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.4969112e-08, -0.9, 0, 0.95)
+
+[node name="kitchen_fridge" parent="furniture" unique_id=1786768692 instance=ExtResource("18_msv1k")]
+transform = Transform3D(-0.8, 0, -6.9938224e-08, 0, 0.8, 0, 6.9938224e-08, 0, -0.8, -1.5, 0, 1.0500001)

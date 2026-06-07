@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://8oryqpqd1adr" path="res://assets/3d_kits/kenney_fancy_town/fence$col.glb" id="1_qedqa"]
 [ext_resource type="PackedScene" uid="uid://c7ym1t7hwhcbb" path="res://assets/3d_kits/kenney_fancy_town/fence_broken$col.glb" id="2_41w0h"]
 [ext_resource type="PackedScene" uid="uid://rj3qbobujf2o" path="res://assets/3d_kits/kenney_survival/rock_a$col.glb" id="2_n3lfr"]
-[ext_resource type="PackedScene" uid="uid://wq8kf0iy5kbf" path="res://prefabs/lighting_lantern/LightingLantern.tscn" id="2_p3p1p"]
+[ext_resource type="PackedScene" uid="uid://wq8kf0iy5kbf" path="res://prefabs/lights/LightingLantern.tscn" id="2_p3p1p"]
 [ext_resource type="PackedScene" uid="uid://ceigfq8a5c2wk" path="res://prefabs/bench/Bench.tscn" id="3_c8hkv"]
 [ext_resource type="PackedScene" uid="uid://cdvwrfld4ueg5" path="res://assets/3d_kits/kenney_survival/rock_b$col.glb" id="3_fwu1h"]
 [ext_resource type="PackedScene" uid="uid://kywp5bpv3r77" path="res://prefabs/table_with_chair/TableWithChair.tscn" id="4_0skje"]
