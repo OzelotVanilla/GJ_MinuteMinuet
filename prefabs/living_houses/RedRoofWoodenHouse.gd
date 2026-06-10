@@ -4,8 +4,8 @@ extends Node3D
 const default_light_energy := 0.3
 
 
-@onready var light_near_bed: OmniLight3D = $furniture/bed_lamp_wall/OmniLight3D
-@onready var light_kitchen: OmniLight3D = $furniture/kitchen_lamp_wall/OmniLight3D
+@onready var light_near_bed: OmniLight3D = $furniture/bed_lamp_wall/Lights/AtmosphereOmni
+@onready var light_kitchen: OmniLight3D = $furniture/kitchen_lamp_wall/Lights/AtmosphereOmni
 @onready var light_table_lamp: OmniLight3D = $furniture/lamp_round_table/OmniLight3D
 
 

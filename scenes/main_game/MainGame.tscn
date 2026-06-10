@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://leu6rxdu7gbf"]
+
+[ext_resource type="PackedScene" uid="uid://byc8o3eef63v6" path="res://maps/world/World.tscn" id="1_ol3pe"]
+[ext_resource type="PackedScene" uid="uid://djflcv32wmtgp" path="res://prefabs/player/Player.tscn" id="2_bf1bb"]
+
+[node name="MainGame" type="Node3D" unique_id=548942766]
+
+[node name="World" parent="." unique_id=1423156321 instance=ExtResource("1_ol3pe")]
+
+[node name="Player" parent="." unique_id=1670083053 instance=ExtResource("2_bf1bb")]
+transform = Transform3D(-1.0927847e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.0927847e-08, -1.9453089, -2.3841858e-07, 2.7268467)
+mouse_sensitivity = 0.003
+camera_pitch_min = -0.7853981633974483
+camera_pitch_max = 0.6108652381980153
