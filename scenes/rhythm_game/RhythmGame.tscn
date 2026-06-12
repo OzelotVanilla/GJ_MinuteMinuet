@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://cb12oim7acxk7" path="res://assets/vector_graphics/rhythm_game/ring.svg" id="2_cylt1"]
 [ext_resource type="Script" uid="uid://lbqgi4c5v80f" path="res://scenes/rhythm_game/RhythmGameDisplayRoot.gd" id="2_n4xc0"]
 [ext_resource type="PackedScene" uid="uid://com7dwu1d1coq" path="res://scenes/rhythm_game/RhythmGameJudgeLine.tscn" id="4_1usjf"]
-[ext_resource type="AudioStream" uid="uid://cafq5fdic618f" path="res://scenes/rhythm_game/test_bgm.mp3" id="5_4e4fu"]
 
 [node name="RhythmGame" type="ColorRect" unique_id=1390097114]
 anchors_preset = 15
@@ -56,7 +55,6 @@ metadata/_edit_use_anchors_ = true
 [node name="Audio" type="Node" parent="." unique_id=2055605920]
 
 [node name="BGMPlayer" type="AudioStreamPlayer" parent="Audio" unique_id=1887538281]
-stream = ExtResource("5_4e4fu")
 
 [connection signal="note_judged" from="DisplayRoot/RhythmGameJudgeLine" to="." method="on_JudgeLine_note_judged"]
 [connection signal="timeout" from="UI/JudgeTextDisappearTimer" to="." method="on_JudgeTextDisappearTimer_timeout"]

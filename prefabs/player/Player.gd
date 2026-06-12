@@ -4,6 +4,9 @@ extends CharacterBody3D
 ## Programed character in this game.
 
 
+signal interact_request
+
+
 func _ready() -> void: self.__onReady__()
 func _process(delta: float) -> void: self.__process__(delta)
 func _physics_process(delta: float) -> void: self.__physicsProcess__(delta)
@@ -117,6 +120,10 @@ func __onUnhandledInput__(event: InputEvent) -> void:
                 Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
             get_viewport().set_input_as_handled()
+
+    if event.is_action_pressed("interact"):
+        # TODO: Should check if player is inside `RhythmChallengeTrigger`'s area.
+        self.interact_request.emit()
 
     if event is InputEventMouseMotion:
         if not self.is_rotating_camera:

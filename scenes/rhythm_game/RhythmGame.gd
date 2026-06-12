@@ -5,6 +5,8 @@ extends ColorRect
 
 signal sheet_load_finished
 
+signal finished(sheet_name: StringName)
+
 
 enum JudgeGrade
 {
@@ -108,6 +110,9 @@ var ui__hide_count_after: float = 1.0:
 @onready var bgm_player: AudioStreamPlayer = $Audio/BGMPlayer
 
 
+## Runtime only data. Assigned when loading sheet.
+var playing_sheet_name: StringName
+
 ## Runtime only data. The note which is rendered and interacted.
 var parsed_notes: Array[RhythmGameNoteInfo] = []
 
@@ -134,6 +139,9 @@ func __onReady__():
 
     # # Post Init.
     self.judge_line.postInit()
+
+    # # Signals.
+    self.bgm_player.finished.connect(self.on_BGMPlayer_finished)
 
     # # Test code.
     #self.loadSheet(load("res://scenes/rhythm_game/test_sheet.tres"))
@@ -179,6 +187,15 @@ func start():
 
 func loadSheet(sheet: RhythmGameSheet):
     self.is_sheet_loading_finished = false
+
+    # # Set name.
+    self.playing_sheet_name = sheet.name
+
+    # # Set BGM.
+    var bgm_file: AudioStream = load(sheet.bgm)
+    if bgm_file == null or bgm_file is not AudioStream:
+        printerr("Not a valid bgm file assigned.")
+    self.bgm_player.stream = bgm_file
 
     # # Parse note, calculate time property.
     self.parsed_notes = []
@@ -260,6 +277,12 @@ func on_JudgeLine_note_judged(note: RhythmGameNote, grade: JudgeGrade) -> void:
 
 func on_JudgeTextDisappearTimer_timeout() -> void:
     self.judge_text.hide()
+
+func on_BGMPlayer_finished():
+    self.finished.emit(self.playing_sheet_name)
+    self.playing_sheet_name = ""
+    self.parsed_notes = []
+    self.combo_count = 0
 
 ## Unit is [code]s[/code].
 func getAccurateBGMPlaybackPosition() -> float:

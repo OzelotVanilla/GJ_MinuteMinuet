@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dqpxuky0nan6s"]
+
+[ext_resource type="Script" uid="uid://ctdouqpigv87q" path="res://scenes/main_game/RhythmChallengeTrigger.gd" id="1_laoqe"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_xm33v"]
+radius = 2.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_xm33v"]
+radius = 0.1
+height = 0.2
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_86dt2"]
+
+[node name="RhythmChallengeTrigger" type="Area3D" unique_id=624497639]
+collision_layer = 5
+collision_mask = 2
+script = ExtResource("1_laoqe")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=15039863]
+shape = SubResource("SphereShape3D_xm33v")
+
+[node name="Indicator" type="StaticBody3D" parent="." unique_id=342755144]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Indicator" unique_id=691342095]
+mesh = SubResource("SphereMesh_xm33v")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Indicator" unique_id=237657495]
+shape = SubResource("SphereShape3D_86dt2")
+
+[node name="InteractableHintLabel" type="Label3D" parent="." unique_id=697328720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37815863, 0)
+billboard = 1
+text = "Press E to challenge"
+
+[connection signal="body_entered" from="." to="." method="on_body_entered"]
+[connection signal="body_exited" from="." to="." method="on_body_exited"]

@@ -6,7 +6,7 @@ extends Resource
 @export var measure_pos: int
 
 ## Start with 1.
-@export var beat_pos: int
+@export var beat_pos: float
 
 ## Time to appear, calculated. Unit is [code]s[/code].
 var time: float = -1

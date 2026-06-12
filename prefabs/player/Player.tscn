@@ -8,10 +8,8 @@ size = Vector3(0.8, 2.7, 0.8)
 
 [node name="Player" type="CharacterBody3D" unique_id=1670083053]
 collision_layer = 2
+collision_mask = 5
 script = ExtResource("1_aeq48")
-mouse_sensitivity = null
-camera_pitch_min = null
-camera_pitch_max = null
 
 [node name="Mesh" parent="." unique_id=368535579 instance=ExtResource("1_4f46a")]
 

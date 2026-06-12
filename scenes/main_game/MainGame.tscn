@@ -1,14 +1,32 @@
 [gd_scene format=3 uid="uid://leu6rxdu7gbf"]
 
+[ext_resource type="Script" uid="uid://q1c8s00fuc5m" path="res://scenes/main_game/MainGame.gd" id="1_l06of"]
 [ext_resource type="PackedScene" uid="uid://byc8o3eef63v6" path="res://maps/world/World.tscn" id="1_ol3pe"]
 [ext_resource type="PackedScene" uid="uid://djflcv32wmtgp" path="res://prefabs/player/Player.tscn" id="2_bf1bb"]
+[ext_resource type="Script" uid="uid://51qsybqh1u5d" path="res://scenes/main_game/BGMManager.gd" id="3_bf1bb"]
+[ext_resource type="PackedScene" uid="uid://dqpxuky0nan6s" path="res://scenes/main_game/RhythmChallengeTrigger.tscn" id="4_j2o7p"]
+[ext_resource type="AudioStream" uid="uid://g48w65aka5ik" path="res://assets/audio/world_bgm/taiko.mp3" id="5_cg2bb"]
 
 [node name="MainGame" type="Node3D" unique_id=548942766]
+script = ExtResource("1_l06of")
 
 [node name="World" parent="." unique_id=1423156321 instance=ExtResource("1_ol3pe")]
 
 [node name="Player" parent="." unique_id=1670083053 instance=ExtResource("2_bf1bb")]
 transform = Transform3D(-1.0927847e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.0927847e-08, -1.9453089, -2.3841858e-07, 2.7268467)
-mouse_sensitivity = 0.003
-camera_pitch_min = -0.7853981633974483
-camera_pitch_max = 0.6108652381980153
+
+[node name="BGMManager" type="Node" parent="." unique_id=8255871]
+script = ExtResource("3_bf1bb")
+
+[node name="TaikoPlayer" type="AudioStreamPlayer" parent="BGMManager" unique_id=243685324]
+stream = ExtResource("5_cg2bb")
+parameters/looping = true
+metadata/sheet_name = &"taiko"
+
+[node name="RhythmChallengeContainer" type="Node3D" parent="." unique_id=144513167]
+
+[node name="1" parent="RhythmChallengeContainer" unique_id=624497639 instance=ExtResource("4_j2o7p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.867712, 0.36650383, 23.078094)
+sheet_path = "uid://wmb24a7lcyk3"
+
+[node name="RhythmGameContainer" type="CanvasLayer" parent="." unique_id=1317777787]
