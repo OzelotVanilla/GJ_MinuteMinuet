@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://cp6k6cjq6r763"]
+
+[ext_resource type="Script" uid="uid://cwjdj4cmb40bs" path="res://scenes/rhythm_game/RhythmGame.gd" id="1_sld8b"]
+[ext_resource type="Texture2D" uid="uid://cb12oim7acxk7" path="res://assets/vector_graphics/rhythm_game/ring.svg" id="2_cylt1"]
+[ext_resource type="Script" uid="uid://lbqgi4c5v80f" path="res://scenes/rhythm_game/RhythmGameDisplayRoot.gd" id="2_n4xc0"]
+[ext_resource type="PackedScene" uid="uid://com7dwu1d1coq" path="res://scenes/rhythm_game/RhythmGameJudgeLine.tscn" id="4_1usjf"]
+[ext_resource type="AudioStream" uid="uid://cafq5fdic618f" path="res://scenes/rhythm_game/test_bgm.mp3" id="5_4e4fu"]
+
+[node name="RhythmGame" type="ColorRect" unique_id=1390097114]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sld8b")
+
+[node name="DisplayRoot" type="Node2D" parent="." unique_id=523609177]
+position = Vector2(576, 324)
+script = ExtResource("2_n4xc0")
+
+[node name="Ring" type="Sprite2D" parent="DisplayRoot" unique_id=1201505690]
+self_modulate = Color(0, 0, 0, 1)
+scale = Vector2(1.0125, 1.0125)
+texture = ExtResource("2_cylt1")
+metadata/radius = 118
+metadata/stroke_width = 10
+
+[node name="RhythmGameJudgeLine" parent="DisplayRoot" unique_id=1623164465 instance=ExtResource("4_1usjf")]
+
+[node name="NoteContainer" type="Node2D" parent="DisplayRoot" unique_id=1910784154]
+
+[node name="UI" type="Control" parent="." unique_id=103931029]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="JudgeText" type="Label" parent="UI" unique_id=21073770]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.7
+anchor_right = 0.5
+anchor_bottom = 0.7
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "JUDGE TEXT HERE"
+metadata/_edit_use_anchors_ = true
+
+[node name="JudgeTextDisappearTimer" type="Timer" parent="UI" unique_id=260482245]
+
+[node name="Audio" type="Node" parent="." unique_id=2055605920]
+
+[node name="BGMPlayer" type="AudioStreamPlayer" parent="Audio" unique_id=1887538281]
+stream = ExtResource("5_4e4fu")
+
+[connection signal="note_judged" from="DisplayRoot/RhythmGameJudgeLine" to="." method="on_JudgeLine_note_judged"]
+[connection signal="timeout" from="UI/JudgeTextDisappearTimer" to="." method="on_JudgeTextDisappearTimer_timeout"]

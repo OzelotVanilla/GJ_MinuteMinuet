@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dbrdhfgm4q1xx"]
+
+[ext_resource type="Script" uid="uid://bt2cfrxdr4gul" path="res://scenes/rhythm_game/RhythmGameNote.gd" id="1_hoql3"]
+[ext_resource type="Texture2D" uid="uid://dv10vmdjsisow" path="res://assets/vector_graphics/rhythm_game/note.svg" id="2_013i0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xm33v"]
+size = Vector2(1, 1)
+
+[node name="RhythmGameNote" type="Area2D" unique_id=1036064708]
+collision_layer = 512
+collision_mask = 256
+script = ExtResource("1_hoql3")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1569573031]
+position = Vector2(0, -84)
+texture = ExtResource("2_013i0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=474403863]
+position = Vector2(0, -23)
+shape = SubResource("RectangleShape2D_xm33v")
+
+[connection signal="area_exited" from="." to="." method="on_area_exited"]

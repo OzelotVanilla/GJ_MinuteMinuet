@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://com7dwu1d1coq"]
+
+[ext_resource type="Script" uid="uid://dr674bllcfpnd" path="res://scenes/rhythm_game/RhythmGameJudgeLine.gd" id="1_7c16x"]
+[ext_resource type="Texture2D" uid="uid://dllqfq1ufm06o" path="res://assets/vector_graphics/rhythm_game/judge_line.svg" id="2_pf0ah"]
+
+[node name="RhythmGameJudgeLine" type="Node2D" unique_id=1623164465]
+script = ExtResource("1_7c16x")
+
+[node name="LineSprite" type="Sprite2D" parent="." unique_id=893558974]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(0, 231)
+texture = ExtResource("2_pf0ah")
+
+[node name="JudgeWindowArea" type="Node2D" parent="." unique_id=764905369]
+
+[node name="PerfectArea" type="Area2D" parent="JudgeWindowArea" unique_id=1463097656]
+collision_layer = 256
+collision_mask = 512
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="JudgeWindowArea/PerfectArea" unique_id=1169198149]
+polygon = PackedVector2Array(0, 0, -1, 1, 1, 1, 0, 0)
+
+[node name="GreatArea" type="Area2D" parent="JudgeWindowArea" unique_id=1030176784]
+collision_layer = 256
+collision_mask = 512
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="JudgeWindowArea/GreatArea" unique_id=604630842]
+polygon = PackedVector2Array(0, 0, -1, 1, 1, 1, 0, 0)
+
+[node name="GoodArea" type="Area2D" parent="JudgeWindowArea" unique_id=314576962]
+collision_layer = 256
+collision_mask = 512
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="JudgeWindowArea/GoodArea" unique_id=808177499]
+polygon = PackedVector2Array(0, 0, -1, 1, 1, 1, 0, 0)
+
+[node name="OKArea" type="Area2D" parent="JudgeWindowArea" unique_id=78043630]
+collision_layer = 256
+collision_mask = 512
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="JudgeWindowArea/OKArea" unique_id=126627810]
+polygon = PackedVector2Array(0, 0, -1, 1, 1, 1, 0, 0)
+
+[node name="BadArea" type="Area2D" parent="JudgeWindowArea" unique_id=850698989]
+collision_layer = 256
+collision_mask = 512
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="JudgeWindowArea/BadArea" unique_id=910885585]
+polygon = PackedVector2Array(0, 0, -1, 1, 1, 1, 0, 0)
+
+[connection signal="area_exited" from="JudgeWindowArea/BadArea" to="." method="on_BadArea_area_exited"]
